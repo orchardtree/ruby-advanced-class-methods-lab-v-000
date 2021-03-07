@@ -53,7 +53,10 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    test = filename.split(/[-\.]/).chomp
+    parsed_filename_ary = filename.split(/[-\.]/)
+    song = self.new
+    song.name = parsed_filename_ary[0].chomp
+    song
     binding.pry
   end
   
