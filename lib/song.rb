@@ -49,7 +49,8 @@ class Song
   end
   
   def self.alphabetical
-   @@all.sort!
+   @@all.sort do |a, b|
+   end
   end
   
   def self.new_from_filename 
