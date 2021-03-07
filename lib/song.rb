@@ -46,7 +46,7 @@ class Song
     else
       self.create_by_name(name)
     end
-    
+    binding.protect_from_forgery
 =begin
     song_found = self.find_by_name(name)
     create_song = self.create_by_name(name)
