@@ -36,6 +36,7 @@ class Song
     else
       false
     end
+    binding.pry
   end
 
   def self.find_or_create_by_name(name)
@@ -50,7 +51,7 @@ class Song
       test = "song_found - #{song_found}"
     end
     test
-    binding.pry
+    #binding.pry
   end
   
   def self.alphabetical 
