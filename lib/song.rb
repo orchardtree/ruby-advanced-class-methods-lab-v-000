@@ -34,7 +34,7 @@ class Song
     if song != nil 
       song 
     else
-      false
+      nil
     end
   end
 
