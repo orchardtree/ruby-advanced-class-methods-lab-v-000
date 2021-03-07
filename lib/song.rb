@@ -50,7 +50,6 @@ class Song
   
   def self.alphabetical
    @@all.sort{|a, b| a <=> b}
-   end
   end
   
   def self.new_from_filename 
