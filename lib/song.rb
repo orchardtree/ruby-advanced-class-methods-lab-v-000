@@ -40,8 +40,9 @@ class Song
 
   def self.find_or_create_by_name(name)
     found_song = self.find_by_name(name)
+    create_song = self.create_by_name(name)
     if found_song.name != name
-      self.create_by_name(name)
+      create_song
     end
     
 =begin
