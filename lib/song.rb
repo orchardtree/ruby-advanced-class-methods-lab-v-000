@@ -52,8 +52,9 @@ class Song
     @@all.sort_by!{|song| song.name}
   end
   
-  def self.new_from_filename(x)
-    song.name = "For Love I Come"
+  def self.new_from_filename(filename)
+    test = filename.split(" - ").join
+    binding.pry
   end
   
   def self.create_from_filename 
