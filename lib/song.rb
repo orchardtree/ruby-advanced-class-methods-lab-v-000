@@ -55,8 +55,8 @@ class Song
   def self.new_from_filename(filename)
     parsed_filename_ary = filename.split(/[-\.]/)
     song = self.new
-    song.name = parsed_filename_ary[1].chomp
-    song.artist_name = parsed_filename_ary[0].chomp
+    song.name = parsed_filename_ary[1].strip
+    song.artist_name = parsed_filename_ary[0].strip
     song
   end
   
