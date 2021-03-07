@@ -41,7 +41,7 @@ class Song
   def self.find_or_create_by_name(name)
     test1 = self.find_by_name(name)
     test2 = self.create_by_name(name)
-    
+    binding.pry
 =begin
     song_found = self.find_by_name(name)
     create_song = self.create_by_name(name)
