@@ -58,7 +58,6 @@ class Song
     song.name = parsed_filename_ary[0].chomp
     song.artist_name = parsed_filename_ary[1].chomp
     song
-    binding.pry
   end
   
   def self.create_from_filename 
