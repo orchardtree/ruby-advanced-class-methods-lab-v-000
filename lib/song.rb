@@ -49,7 +49,11 @@ class Song
   end
   
   def self.alphabetical
-    @@all.sort
+    sorted_song_names = []
+    @@all.each do |song|
+      sorted_song_names << song.name
+    end
+    sorted_song_names.sort!
   end
   
   def self.new_from_filename 
