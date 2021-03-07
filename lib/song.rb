@@ -40,7 +40,7 @@ class Song
 
   def self.find_or_create_by_name(name)
 
-begin
+=begin
     song_found = self.find_by_name(name)
     create_song = self.create_by_name(name)
     if song_found == false
@@ -48,7 +48,7 @@ begin
     else
       song_found
     end
-end
+=end
   end
   
   def self.alphabetical
