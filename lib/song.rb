@@ -34,20 +34,20 @@ class Song
     if song != nil 
       song 
     else
-      nil
+      false
     end
   end
 
   def self.find_or_create_by_name(name)
     test = ""
-    existing_song = self.find_by_name(name)
+    song_found = self.find_by_name(name)
     create_song = self.create_by_name(name)
-    if existing_song == nil
+    if song_found == false
       create_song
-      test = "create song"
+      test = "create song #{create_song}"
     else
-      existing_song
-      test = "existing song"
+      song_found
+      test = "song_found - #{song_found}"
     end
     test
     binding.pry
